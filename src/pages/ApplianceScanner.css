@@ -1,0 +1,98 @@
+.appliance-scanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100vh; /* Ensure it takes full height */
+}
+
+.upload-container {
+  margin: 20px 0;
+  width: 100%; /* Make sure the container is wide enough */
+  max-width: 600px; /* Limit the width if needed */
+}
+
+.drag-drop-box {
+  background-color: white; /* Set the background to white */
+  border: 2px dashed #4ecca3;
+  border-radius: 8px;
+  padding: 20px;
+  height: 120px; /* Increased height */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #4ecca3;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.drag-drop-box:hover {
+  background-color: rgba(78, 204, 163, 0.1); /* Lighten on hover */
+}
+
+.upload-input {
+  display: none; /* Hide default file input */
+}
+
+.upload-label {
+  padding: 10px 20px;
+  background-color: #4ecca3;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Space above the button */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow */
+  transition: background-color 0.3s;
+}
+
+.upload-label:hover {
+  background-color: #45b393; /* Change color on hover */
+}
+
+.image-preview {
+  margin: 20px 0;
+  max-width: 100%;
+  display: flex; /* Use flex to center content */
+  justify-content: center; /* Center the image horizontally */
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.device-details-form {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  width: 100%; /* Full width */
+  max-width: 300px; /* Limit the maximum width */
+  align-items: center; /* Center the form elements */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.device-details-form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Make inputs take full width */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.device-details-form button {
+  padding: 10px;
+  background-color: #1a1a2e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; /* Full width for the button */
+}
+
+.device-details-form button:hover {
+  background-color: #2a2a4e;
+}

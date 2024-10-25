@@ -1,0 +1,53 @@
+.sidebar {
+    width: 250px;
+    background-color: #1a1a2e; /* Dark background for sidebar */
+    color: white;
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif; /* Set sans-serif font */
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center; /* Center the logo */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1;
+  }
+  
+  .sidebar li {
+    margin-bottom: 20px; /* Increased spacing between tabs */
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 15px; /* Added padding for better click area and appearance */
+    border-radius: 4px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+    display: block; /* Ensures the link covers the entire area */
+  }
+  
+  .sidebar a:hover {
+    background-color: rgba(78, 204, 163, 0.3); /* Light background on hover */
+    color: #4ecca3; /* Change text color on hover */
+  }
+  
+  .sidebar a.active {
+    background-color: #4ecca3; /* Active link background color */
+    color: white; /* Active link text color */
+    padding: 12px 15px; /* Ensure padding matches regular links */
+  }
+  
